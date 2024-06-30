@@ -40,5 +40,6 @@ def plot_cumulative_state(df: pd.DataFrame, outfile: str):
 if __name__ == "__main__":
     state_data = fetch_csv(STATE_DATA_URL)
     state_data = clean(state_data)
-
+    print('writing')
     plot_cumulative_state(state_data, "index.html")
+    print('done')
