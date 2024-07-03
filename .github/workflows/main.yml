@@ -29,8 +29,8 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config --global user.name 'raffaelemazziotti'
-        git config --global user.email 'raffaelemazziotti@example.com'
+        git config --local user.name 'raffaelemazziotti'
+        git config --local user.email 'raffaelemazziotti@example.com'
         git add README.md
         git commit -m 'Update README with timestamp'
         git push
